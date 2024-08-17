@@ -224,6 +224,10 @@
                             version="${org.wso2.carbon.identity.auth.valve.version}"
                         </Export-Package>
                         <DynamicImport-Package>*</DynamicImport-Package>
+                        <Provide-Capability>
+                            osgi.service;objectClass=org.wso2.carbon.identity.auth.service.AuthenticationManager,
+                            osgi.service;objectClass=org.wso2.carbon.identity.authz.service.AuthorizationManager
+                        </Provide-Capability>
                     </instructions>
                 </configuration>
             </plugin>

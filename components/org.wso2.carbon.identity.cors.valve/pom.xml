@@ -175,6 +175,9 @@
                             !org.wso2.carbon.identity.cors.valve.internal,
                             org.wso2.carbon.identity.cors.valve.*;version="${org.wso2.carbon.identity.cors.valve.version}"
                         </Export-Package>
+                        <Provide-Capability>
+                            osgi.service;objectClass=org.wso2.carbon.identity.cors.service.CORSManager
+                        </Provide-Capability>
                     </instructions>
                 </configuration>
             </plugin>
